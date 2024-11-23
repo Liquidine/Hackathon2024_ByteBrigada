@@ -1,13 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pyscript@0.2.0/dist/pyscript.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .left-panel {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            overflow-y: scroll;
+        }
+        .right-panel {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f45d5d;
+        }
+        .text-output {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .visualization {
+            margin-top: 20px;
+            height: 200px;
+            background: linear-gradient(90deg, rgba(255, 0, 150, 1) 0%, rgba(0, 255, 255, 1) 100%);
+            border-radius: 8px;
+        }
+        .input-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #f45d5d;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #e44343;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Predictive Model App</h1>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="heading">Text output</div>
+            <p class="text-output">
+            
+            </p>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="heading">Visualized Data</div>
+            <div class="visualization"></div>
+            <div class="visualization"></div>
+        </div>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+        <input type="text" placeholder="Write your query here..." />
+        <button>Upload dataset</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pyscript@0.2.0/dist/pyscript.js"></script>
+</body>
 </html>

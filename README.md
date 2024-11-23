@@ -1,14 +1,20 @@
-Recommended to run "npm install" when cloning for the first time
+Recommended to run
 
-TODO:
-    - Documentation
-    - Code
-        - Frontend (React + Vue)
-        - Backend (?)
-        - NLP module (OpenAI)
-        - Data Processing (Pandas/NumPy)
-        - Data source
-        - Visualisation
+    npm install
+
+when cloning for the first time. 
+
+# TODO
+
+- Documentation
+- Code
+  - Frontend (React + Vue)
+  - Backend (?)
+  - NLP module (OpenAI)
+  - Data Processing (Pandas/NumPy)
+  - Data source
+  - Visualisation
+  - Design
 
 # React + Vite
 
@@ -18,3 +24,12 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# FastAPI
+Install the FastAPI package with:
+
+    pip install "fastapi[standard]
+
+To run the backend use:
+
+    fastapi dev src/backend.py
